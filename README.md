@@ -5,6 +5,7 @@ Repo for the project based approach of Intro to Python Bootcamp.
   - [Introduction](#introduction)
   - [Before Starting](#before-starting)
   - [Week 1](#week-1)
+  - [Week 2](#week-2)
 
 ## Introduction
 
@@ -13,7 +14,7 @@ In this project we are going to do a simple implementation of the game "Rock Pap
 ## Before Starting
 
 1. Set up the project location using PyCharm where you will be doing the project. 
-2. Test by using `print('Hello, World!')` (you know, for good luck 😊).
+2. Test by using `print("Hello, World!")` (you know, for good luck 😊).
 3. Commit and push your changes to the repository of your project.
 
 ## Week 1
@@ -30,5 +31,44 @@ It is up to you how you want to introduce to the player that runs your project.
 
 Code snippet:
 ```python
-print('Welcome to the game of Rock Paper Scissors.')
+print("Welcome to the game of Rock Paper Scissors.")
+```
+
+## Week 2
+
+Now that we've learnt about Variables and Booleans in week two, we are going to introduce these two elements into our project. We will add variables for the player's choice and also the computer's choice.
+
+Code snippet:
+```python
+computer_choice = "rock"
+player_choice = "paper"
+
+print("Player's choice: " + player_choice)
+print("Computer's choice: " + computer_choice)
+```
+
+Since we have learned about Booleans in week two, we can also use booleans as a way to keep track of whether the player won or not.
+
+Code snippet:
+```python
+is_player_win = True
+print(is_player_win)  #this will print True
+```
+
+We can then structure the whole code to be more organized. The code snippet up to this point should look something like this:
+```python
+# variable declaration
+computer_choice = "rock"
+player_choice = "paper"
+is_player_win = True
+
+# display message
+print("Welcome to the game of Rock Paper Scissors.")
+
+# display choices
+print("Player's choice: " + player_choice)
+print("Computer's choice: " + computer_choice)
+
+# display whether player wins
+print(is_player_win)
 ```
