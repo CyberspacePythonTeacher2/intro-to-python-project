@@ -6,6 +6,7 @@ Repo for the project based approach of Intro to Python Bootcamp.
   - [Before Starting](#before-starting)
   - [Week 1](#week-1)
   - [Week 2](#week-2)
+  - [Week 3](#week-3)
 
 ## Introduction
 
@@ -29,7 +30,7 @@ The year is 20xx. The world is overrun by rogue AIs. You are now face to face wi
 ```
 It is up to you how you want to introduce to the player that runs your project.
 
-Code snippet:
+Code snippet for this week:
 ```python
 print("Welcome to the game of Rock Paper Scissors.")
 ```
@@ -55,12 +56,60 @@ is_player_win = True
 print(is_player_win)  #this will print True
 ```
 
-We can then structure the whole code to be more organized. The code snippet up to this point should look something like this:
+We can then structure the whole code to be more organized. The code snippet up to this point should look something like below.
+
+Code snippet for this week:
 ```python
 # variable declaration
-computer_choice = "rock"
+computer_choice = "rock" # Good ol rock, nothing beats that
 player_choice = "paper"
 is_player_win = True
+
+# display message
+print("Welcome to the game of Rock Paper Scissors.")
+
+# display choices
+print("Player's choice: " + player_choice)
+print("Computer's choice: " + computer_choice)
+
+# display whether player wins
+print(is_player_win)
+```
+
+## Week 3
+
+In this week we learnt about loops, operators and conditions and we will introduce them to our project up to this point. We also learnt about functions, then we can introduce them to the project as well.
+
+For the loops, we are going to use it to control how many rounds are played. We will also use operators to manipulate the round number and we use condition to determine when the while loop is exited.
+
+Code snippet:
+```python
+number_of_rounds = 3
+
+while number_of_rounds != 0: # while loop with condition
+  print("Current round: " + str(number_of_rounds))
+  number_of_rounds = number_of_rounds - 1 # operator to manipulate the round number
+```
+
+As for function, we are going to make a function where the computer will make it's choice to play against the player.
+
+Code snippet:
+```python
+def computer_play():
+  return "rock" # Good ol rock, nothing beats that
+```
+
+We can then combine the code snippets below with the rest of our code.
+
+Code snippet for this week:
+```python
+# variable declaration
+player_choice = "paper"
+is_player_win = True
+number_of_rounds = 3
+
+def computer_play():
+  return "rock" # Good ol rock, nothing beats that
 
 # display message
 print("Welcome to the game of Rock Paper Scissors.")
