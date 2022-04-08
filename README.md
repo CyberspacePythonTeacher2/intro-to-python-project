@@ -41,7 +41,7 @@ Now that we've learnt about Variables and Booleans in week two, we are going to 
 
 Code snippet:
 ```python
-computer_choice = "rock"
+computer_choice = "rock" # Good ol rock, nothing beats that
 player_choice = "paper"
 
 print("Player's choice: " + player_choice)
