@@ -53,7 +53,7 @@ Since we have learned about Booleans in week two, we can also use booleans as a 
 Code snippet:
 ```python
 is_player_win = True
-print(is_player_win)  #this will print True
+print("Player win status: " + str(is_player_win))  #this will print True, we have to typecast to string
 ```
 
 We can then structure the whole code to be more organized. The code snippet up to this point should look something like below.
@@ -84,11 +84,12 @@ For the loops, we are going to use it to control how many rounds are played. We 
 
 Code snippet:
 ```python
+current_round = 0
 number_of_rounds = 3
 
-while number_of_rounds != 0: # while loop with condition
-  print("Current round: " + str(number_of_rounds))
-  number_of_rounds = number_of_rounds - 1 # operator to manipulate the round number
+while current_round != number_of_rounds: # while loop with condition
+  print("Current round: " + str(current_round + 1))
+  current_round = current_round + 1 # operator to manipulate the round number
 ```
 
 As for function, we are going to make a function where the computer will make it's choice to play against the player.
@@ -106,6 +107,7 @@ Code snippet for this week:
 # variable declaration
 player_choice = "paper"
 is_player_win = True
+current_round = 0
 number_of_rounds = 3
 
 def computer_play():
@@ -114,10 +116,16 @@ def computer_play():
 # display message
 print("Welcome to the game of Rock Paper Scissors.")
 
-# display choices
-print("Player's choice: " + player_choice)
-print("Computer's choice: " + computer_choice)
+while current_round != number_of_rounds: # while loop with condition
+  print("Current round: " + str(current_round + 1)) # we should show 1 instead of 0 for the first round
+  computer_choice = computer_play()
+
+  # display choices
+  print("Player's choice: " + player_choice)
+  print("Computer's choice: " + computer_choice)
+
+  current_round = current_round + 1 # operator to manipulate the round number
 
 # display whether player wins
-print(is_player_win)
+print("Player win status: " + str(is_player_win)) #this will print True, we have to typecast to string
 ```
