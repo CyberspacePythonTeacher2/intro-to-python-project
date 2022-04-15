@@ -48,7 +48,6 @@ It is up to you how you want to introduce to the player that runs your project.
 Code snippet for this week:
 ```python
 print("Welcome to the game of Rock Paper Scissors.")
-
 print("The winning Rules for the game are as follows:\n"
                                 +"   "+"Rock vs scissor->Rock wins\n"
                                 +"   "+"Rock vs paper->paper wins\n"
