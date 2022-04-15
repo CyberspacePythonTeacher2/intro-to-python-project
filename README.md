@@ -30,7 +30,7 @@ The winner is selected based on the following:
 
 ## Before Starting
 
-1. Set up the project location using PyCharm where you will be doing the project. 
+1. Set up the project location using Google Colab where you will be doing the project. 
 2. Test by using `print("Hello, World!")` (you know, for good luck 😊).
 3. Commit and push your changes to the repository of your project.
 
