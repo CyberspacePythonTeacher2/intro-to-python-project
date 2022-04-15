@@ -21,6 +21,12 @@ The winner is selected based on the following:
 - Paper covers rock
 - Scissors cut paper
 
+##Playing the game in Python
+- Take User Input
+- Make the Computer Choose
+- Determine a Winner
+
+
 
 ## Before Starting
 
