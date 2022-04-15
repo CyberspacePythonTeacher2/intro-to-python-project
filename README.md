@@ -16,9 +16,9 @@ It is a game that can be played between two or more players. The players can cho
 Some of you who might not know the game can check the [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors) or this hilarious [Wikihow](https://www.wikihow.com/Play-Rock,-Paper,-Scissors). The game will be played in the command line interface.
 The winner is selected based on the following:
 
-- [Rock smashes scissors]
-- [Paper covers rock]
-- [Scissors cut paper]
+- Rock smashes scissors
+- Paper covers rock
+- Scissors cut paper
 
 
 ## Before Starting
