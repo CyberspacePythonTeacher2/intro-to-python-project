@@ -133,3 +133,12 @@ print("Player win status: " + str(is_player_win)) #this will print True, we have
 
 ## Week 4
 
+print("Hello world")
+#this is a single line comment 
+
+"""this is a multiple line comment 
+you can write everthig between this prantice  
+"""
+if 5>2:
+ print("you are correct")
+
