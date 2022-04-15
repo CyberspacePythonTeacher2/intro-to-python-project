@@ -11,7 +11,9 @@ Repo for the project based approach of Intro to Python Bootcamp.
 
 ## Introduction
 
-In this project we are going to do a simple implementation of the game "Rock Paper Scissors" (aka **Schere, Stein, Papier** in German). Some of you who might not know the game can check the [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors) or this hilarious [Wikihow](https://www.wikihow.com/Play-Rock,-Paper,-Scissors). The game will be played in the command line interface.
+In this project we are going to do a simple implementation of the game "Rock Paper Scissors" (aka **Schere, Stein, Papier** in German).
+It is a game that can be played between two or more players. The players can choose either “rock, paper, scissors”. Then each of the players simultaneously makes their hands in the shapes of Rock Paper Scissors. The winner is selected based on the following:
+Some of you who might not know the game can check the [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors) or this hilarious [Wikihow](https://www.wikihow.com/Play-Rock,-Paper,-Scissors). The game will be played in the command line interface.
 
 ## Before Starting
 
