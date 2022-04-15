@@ -3,7 +3,6 @@ Repo for the project based approach of Intro to Python Bootcamp.
 
 - [Rock Paper Scissors](#rock-paper-scissors)
   - [Introduction](#introduction)
-  - [Before Starting](#before-starting)
   - [Week 1](#week-1)
   - [Week 2](#week-2)
   - [Week 3](#week-3)
