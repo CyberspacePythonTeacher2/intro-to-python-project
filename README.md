@@ -133,13 +133,5 @@ print("Player win status: " + str(is_player_win)) #this will print True, we have
 
 ## Week 4
 
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "name": "Untitled1.ipynb",
-      "provenance": [],
-      "authorship_tag": "ABX9TyOMurrihWWFSUG+qTQDVBCm",
-      "include_colab_link": true
+
 
