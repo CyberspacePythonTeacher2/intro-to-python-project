@@ -49,8 +49,8 @@ Code snippet for this week:
 ```python
 print("Welcome to the game of Rock Paper Scissors.")
 print("The winning Rules for the game are as follows:\n"
-                                +"   "+"Rock vs scissor->Rock wins\n"
                                 +"   "+"Rock vs paper->paper wins\n"
+                                +"   "+"Rock vs scissor->Rock wins\n"
                                 +"   "+"paper vs scissor->scissor wins\n")
 ```
 
