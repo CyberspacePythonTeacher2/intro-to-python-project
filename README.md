@@ -152,7 +152,6 @@ print("Player win status: " + str(is_player_win)) #this will print True, we have
 ## Week 4
 
 ``` python
-if x>5
- print("Hello")
+
 ```
 
