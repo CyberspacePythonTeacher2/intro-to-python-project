@@ -48,9 +48,9 @@ It is up to you how you want to introduce to the player that runs your project.
 Code snippet for this week:
 ```python
 print("Welcome to the game of Rock Paper Scissors.")
-print("The winning Rules for the game are as follows:\n"
-                                +"   "+"Rock vs paper->paper wins\n"
-                                +"   "+"Rock vs scissor->Rock wins\n"
+print("The winning rules for the game are as follows:\n"
+                                +"   "+"rock vs paper->paper wins\n"
+                                +"   "+"rock vs scissor->Rock wins\n"
                                 +"   "+"paper vs scissor->scissor wins\n")
 ```
 
@@ -60,11 +60,17 @@ Now that we've learnt about Variables and Booleans in week two, we are going to 
 
 Code snippet:
 ```python
-computer_choice = "rock" # Good ol rock, nothing beats that
-player_choice = "paper"
+player_choice = "rock"# If player choice is rock and computer choice is paper then rock vs paper->paper wins 
+computer_choice = "paper" # Good ol rock, nothing beats that
+
+player_choice = "rock" #If player choice is rock and computer choice is scissor then rock vs scissor->rock wins 
+computer_choice = "scissor"
+
+player_choice = "paper" #If player choice is paper and computer choice is scissor then paper vs scissor->scissor wins 
+computer_choice = "scissor"
 
 print("Player's choice: " + player_choice)
-print("Computer's choice: " + computer_choice)
+print("Computer's choice: " + computer_choice)                              
 ```
 
 Since we have learned about Booleans in week two, we can also use booleans as a way to keep track of whether the player won or not.
