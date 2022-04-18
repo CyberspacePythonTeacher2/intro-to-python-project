@@ -179,9 +179,12 @@ print("Player win status: " + str(is_player_win)) #this will print True, we have
 
 ## Week 4
 As for week four, we learned how to use the python library and how to import module.Now here based on the need of the project we import the random module.
+Python Random module is an in-built module of Python which is used to generate random numbers.It returns a random number between 0.0 and 1.0.
 
-
+Code snippet
 ``` python
+import random
+print(random.random())
 
 ```
 
