@@ -187,4 +187,4 @@ import random
 print(random.random())
 
 ```
-
+As the game is played between two players, one is the user and the other is the computer. For the computer to make the selection, we need to use the random() module, that the (rock, paper, scissors) could be selected randomly.
