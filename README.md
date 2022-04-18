@@ -70,7 +70,8 @@ player_choice = "paper" #If player choice is paper and computer choice is scisso
 computer_choice = "scissor"
 
 print("Player's choice: " + player_choice)
-print("Computer's choice: " + computer_choice)                              
+print("Computer's choice: " + computer_choice) 
+
 ```
 
 Since we have learned about Booleans in week two, we can also use booleans as a way to keep track of whether the player won or not.
@@ -86,9 +87,10 @@ We can then structure the whole code to be more organized. The code snippet up t
 Code snippet for this week:
 ```python
 # variable declaration
-computer_choice = "rock" # Good ol rock, nothing beats that
-player_choice = "paper"
-is_player_win = True
+player_choice = "rock"
+computer_choice = "paper" # Good ol rock, nothing beats that
+is_player_win = False
+is_computer_win= True
 
 # display message
 print("Welcome to the game of Rock Paper Scissors.")
@@ -97,8 +99,9 @@ print("Welcome to the game of Rock Paper Scissors.")
 print("Player's choice: " + player_choice)
 print("Computer's choice: " + computer_choice)
 
-# display whether player wins
-print(is_player_win)
+# display who wins
+print("Is player wins:",is_player_win)
+print("Is computer wins",is_computer_win)
 ```
 
 ## Week 3
