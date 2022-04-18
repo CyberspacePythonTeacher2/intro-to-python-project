@@ -110,6 +110,7 @@ In this week we learnt about loops, operators and conditions and we will introdu
 
 For the loops, we are going to use it to control how many rounds are played. We will also use operators to manipulate the round number and we use condition to determine when the while loop is exited.
 
+## If ... Else
 ```python
 choice1="rock"
 choice2="paper"
