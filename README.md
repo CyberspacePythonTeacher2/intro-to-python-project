@@ -178,6 +178,7 @@ print("Player win status: " + str(is_player_win)) #this will print True, we have
 ```
 
 ## Week 4
+As for week four, we learned how to use the python library and how to import them. here for our game we need the random library.
 
 ``` python
 
