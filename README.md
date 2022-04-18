@@ -110,6 +110,23 @@ In this week we learnt about loops, operators and conditions and we will introdu
 
 For the loops, we are going to use it to control how many rounds are played. We will also use operators to manipulate the round number and we use condition to determine when the while loop is exited.
 
+```python
+choice1="rock"
+choice2="paper"
+choice3="scissor"
+player_choice=""#You can assign for this variable (rock, paper, scissor)
+computer_choice=""#You can assign for this variable (rock, paper, scissor)
+
+if player_choice== "rock":
+  if computer_choice=="paper":
+     print("The winner is:",choice2)
+if player_choice=="rock":
+   if computer_choice=="scissor":
+        print("The winner is:",choice1)
+elif player_choice=="paper":
+  if computer_choice=="scissor":
+    print("The winner is:",choice3)
+```
 Code snippet:
 ```python
 current_round = 0
