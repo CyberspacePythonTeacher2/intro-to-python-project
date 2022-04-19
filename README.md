@@ -3,9 +3,12 @@ Repo for the project based approach of Intro to Python Bootcamp.
 
 - [Rock Paper Scissors](#rock-paper-scissors)
   - [Introduction](#introduction)
+  - [Playing the game in Python](#playing-the-game-in-python)
+  - [Before Starting](#before-starting)
   - [Week 1](#week-1)
   - [Week 2](#week-2)
   - [Week 3](#week-3)
+  - [If ... Else](#if--else)
   - [Week 4](#week-4)
 
 ## Introduction
@@ -49,9 +52,9 @@ Code snippet for this week:
 ```python
 print("Welcome to the game of Rock Paper Scissors.")
 print("The winning rules for the game are as follows:\n"
-                                +"   "+"rock vs paper->paper wins\n"
-                                +"   "+"rock vs scissor->Rock wins\n"
-                                +"   "+"paper vs scissor->scissor wins\n")
+                                +"   "+"rock vs paper    -> paper wins\n"
+                                +"   "+"rock vs scissor  -> rock wins\n"
+                                +"   "+"paper vs scissor -> scissor wins\n")
 ```
 
 ## Week 2
@@ -60,18 +63,17 @@ Now that we've learnt about Variables and Booleans in week two, we are going to 
 
 Code snippet:
 ```python
-player_choice = "rock"# If player choice is rock and computer choice is paper then rock vs paper->paper wins 
+player_choice = "rock"# If player choice is rock and computer choice is paper then rock vs paper -> paper wins 
 computer_choice = "paper" # Good ol rock, nothing beats that
 
-player_choice = "rock" #If player choice is rock and computer choice is scissor then rock vs scissor->rock wins 
+player_choice = "rock" #If player choice is rock and computer choice is scissor then rock vs scissor -> rock wins 
 computer_choice = "scissor"
 
-player_choice = "paper" #If player choice is paper and computer choice is scissor then paper vs scissor->scissor wins 
+player_choice = "paper" #If player choice is paper and computer choice is scissor then paper vs scissor -> scissor wins 
 computer_choice = "scissor"
 
 print("Player's choice: " + player_choice)
-print("Computer's choice: " + computer_choice) 
-
+print("Computer's choice: " + computer_choice)
 ```
 
 Since we have learned about Booleans in week two, we can also use booleans as a way to keep track of whether the player won or not.
@@ -101,7 +103,7 @@ print("Computer's choice: " + computer_choice)
 
 # display who wins
 print("Is player wins:",is_player_win)
-print("Is computer wins",is_computer_win)
+print("Is computer wins: ",is_computer_win)
 ```
 
 ## Week 3
@@ -112,24 +114,27 @@ For the loops, we are going to use it to control how many rounds are played. We 
 
 ## If ... Else
 Using the If and else statement we can play the game statically.
-```python
-choice1="rock"
-choice2="paper"
-choice3="scissor"
-player_choice=""#You can assign for this variable (rock, paper, scissor)
-computer_choice=""#You can assign for this variable (rock, paper, scissor)
 
-if player_choice== "rock":
-  if computer_choice=="paper":
-     print("The winner is:",choice2)
-if player_choice=="rock":
-   if computer_choice=="scissor":
-        print("The winner is:",choice1)
-elif player_choice=="paper":
-  if computer_choice=="scissor":
-    print("The winner is:",choice3)
+```python
+choice1 = "rock"
+choice2 = "paper"
+choice3 = "scissor"
+player_choice = ""#You can assign for this variable (rock, paper, scissor)
+computer_choice = ""#You can assign for this variable (rock, paper, scissor)
+
+if player_choice == "rock":
+  if computer_choice == "paper":
+     print("The winner is:", choice2)
+if player_choice == "rock":
+   if computer_choice == "scissor":
+        print("The winner is:", choice1)
+elif player_choice == "paper":
+  if computer_choice == "scissor":
+    print("The winner is:", choice3)
 ```
+
 Code snippet:
+
 ```python
 current_round = 0
 number_of_rounds = 3
@@ -203,7 +208,7 @@ while True:
 	player_choice = int(input("player turn: "))
  
  #looping until user enter invalid input
-	while player_choice > 3 or choice < 1:
+	while player_choice > 3 or player_choice < 1:
 		player_choice = int(input("Your input is not valid, please enter a value between 1,3: "))
 		
 	if player_choice == 1:
