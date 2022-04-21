@@ -8,7 +8,7 @@ Repo for the project based approach of Intro to Python Bootcamp.
   - [Week 1](#week-1)
   - [Week 2](#week-2)
   - [Week 3](#week-3)
-  - [If ... Else](#if--else)
+    - [If ... Else](#if--else)
   - [Week 4](#week-4)
 
 ## Introduction
@@ -112,7 +112,7 @@ In this week we learnt about loops, operators and conditions and we will introdu
 
 For the loops, we are going to use it to control how many rounds are played. We will also use operators to manipulate the round number and we use condition to determine when the while loop is exited.
 
-## If ... Else
+### If ... Else
 Using the If and else statement we can play the game statically.
 
 ```python
@@ -212,7 +212,7 @@ while True:
 		player_choice = int(input("Your input is not valid, please enter a value between 1,3: "))
 		
 	if player_choice == 1:
-		player_select = 'Rock'
+		player_select = 'rock'
 	elif player_choice == 2:
 		player_select = 'paper'
 	else:
@@ -224,11 +224,9 @@ while True:
  
  #We make a specific interval that the computer choose a random  number between (1,3)
 	computer_choice = random.randint(1, 3)
- 
-  #For avoiding the same selection as the player, the computer is needed to select a different random number between (1.3)
-	while computer_choice == player_choice:
-		computer_choice = random.randint(1, 3)
-    
+
+# It is okay if the computer makes the same choice
+
 	if computer_choice == 1:
 		computer_select = 'rock'
 	elif computer_choice == 2:
