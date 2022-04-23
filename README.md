@@ -10,6 +10,7 @@ Repo for the project based approach of Intro to Python Bootcamp.
   - [Week 3](#week-3)
     - [If ... Else](#if--else)
   - [Week 4](#week-4)
+  - [Week 5](#week-5)
 
 ## Introduction
 
@@ -186,7 +187,7 @@ print("Player win status: " + str(is_player_win)) #this will print True, we have
 As for week four, we learned how to use the python library and how to import module.Now here based on the need of the project we import the random module.
 Python Random module is an in-built module of Python which is used to generate random numbers.It returns a random number between 0.0 and 1.0.
 
-Code snippet
+Code snippet:
 ``` python
 import random
 print(random.random())
@@ -241,3 +242,82 @@ while True:
  #for ending the loop
 	break
 ``` 
+
+## Week 5
+
+Home stretch. We are going to clean up and put some final touches to the game so that we can play it. First we will define a function for the computer to make the choice.
+
+Code snippet:
+```python
+import random
+
+# global variable
+computer_select = ''
+
+def get_computer_selection():
+  global computer_select
+  print("\n Computer turn.......")
+
+  #We make a specific interval that the computer choose a random  number between (1,3)
+  computer_choice = random.randint(1, 3)
+
+  # It is okay if the computer makes the same choice
+
+  if computer_choice == 1:
+    computer_select = 'rock'
+  elif computer_choice == 2:
+    computer_select = 'paper'
+  else:
+     computer_select= 'scissor'
+```
+
+This way, we can call the function `get_computer_selection()` whenever the computer has to play the turn.
+
+```python
+get_computer_selection()
+print("Computer has selected: " + computer_select)
+```
+
+We can also make functions that increase the score of the player or the computer. For this example we will make a function to increase the score of the player.
+
+Code snippet:
+```python
+# initialize score
+player_score = 0
+
+def player_win_round():
+  global player_score
+  player_score += 1
+```
+
+This way, the player score is incremented by one when the player wins the round.
+
+Last but not least, since we are keeping track of the score, we should also ask the player the amount of points to win the game. We can prompt this input at the beginning of the game.
+
+Code snippet:
+```python
+# initialize points to win
+points_to_win = 0
+
+print("Enter the amount of points to win.")
+# take the input from the user for the amount of points to win
+points_to_win = int(input("Points to win: "))
+```
+
+We can then use a while loop to make the player play the game until either the player or the computer reaches the amount of points to win.
+
+Code snippet:
+```python
+while player_score < points_to_win and computer_score < points_to_win:
+  # play the game
+```
+
+We also have to do the condition handling on who wins the round by comparing the choice of the player and the computer. We can do something like this for example.
+
+Code snippet:
+```python
+if player_select == computer_select:
+  print(player_select.capitalize() + " Vs " + computer_select.capitalize() + ", It's a draw!")
+if player_select == 'paper' and computer_select == 'rock':
+  print(player_select.capitalize() + " Vs " + computer_select.capitalize() + ", Player wins the round!")
+```
