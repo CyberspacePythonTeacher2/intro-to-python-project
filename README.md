@@ -64,14 +64,14 @@ Now that we've learnt about Variables and Booleans in week two, we are going to 
 
 Code snippet:
 ```python
-player_choice = "rock"# If player choice is rock and computer choice is paper then rock vs paper -> paper wins 
+player_choice = "rock"# If player choice is rock and computer choice is paper then rock vs paper -> paper wins
 computer_choice = "paper" # Good ol rock, nothing beats that
 
-player_choice = "rock" #If player choice is rock and computer choice is scissor then rock vs scissor -> rock wins 
-computer_choice = "scissor"
+player_choice = "rock" #If player choice is rock and computer choice is scissors then rock vs scissors -> rock wins
+computer_choice = "scissors"
 
-player_choice = "paper" #If player choice is paper and computer choice is scissor then paper vs scissor -> scissor wins 
-computer_choice = "scissor"
+player_choice = "paper" #If player choice is paper and computer choice is scissors then paper vs scissors -> scissors wins
+computer_choice = "scissors"
 
 print("Player's choice: " + player_choice)
 print("Computer's choice: " + computer_choice)
