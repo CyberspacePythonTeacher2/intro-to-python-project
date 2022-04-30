@@ -119,18 +119,18 @@ Using the If and else statement we can play the game statically.
 ```python
 choice1 = "rock"
 choice2 = "paper"
-choice3 = "scissor"
-player_choice = ""#You can assign for this variable (rock, paper, scissor)
-computer_choice = ""#You can assign for this variable (rock, paper, scissor)
+choice3 = "scissors"
+player_choice = ""#You can assign for this variable (rock, paper, scissors)
+computer_choice = ""#You can assign for this variable (rock, paper, scissors)
 
 if player_choice == "rock":
   if computer_choice == "paper":
      print("The winner is:", choice2)
 if player_choice == "rock":
-   if computer_choice == "scissor":
+   if computer_choice == "scissors":
         print("The winner is:", choice1)
 elif player_choice == "paper":
-  if computer_choice == "scissor":
+  if computer_choice == "scissors":
     print("The winner is:", choice3)
 ```
 
