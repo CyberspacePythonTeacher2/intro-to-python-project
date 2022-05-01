@@ -221,7 +221,7 @@ while True:
 		player_select = 'scissors'
 
   # print user choice
-	print("The user has selected:" + player_select)
+	print("The user has selected: " + player_select.capitalize())
 	print("\n Computer turn.......")
  
  #We make a specific interval that the computer choose a random  number between (1,3)
@@ -236,9 +236,9 @@ while True:
 	else:
 		computer_select= 'scissors'
 		
-	print("Computer has selected: " + computer_select)
+	print("Computer has selected: " + computer_select.capitalize())
 
-	print(player_select + " Vs " + computer_select)	
+	print(player_select.capitalize() + " Vs " + computer_select.capitalize())
  #for ending the loop
 	break
 ``` 
