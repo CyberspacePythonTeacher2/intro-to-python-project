@@ -204,7 +204,7 @@ print("Welcome to the game of Rock Paper Scissors.")
 
 #runs without any conditions until the break statement executes inside the loop.
 while True:
-	print("Enter your choice \n 1 for rock \n 2 for paper \n 3 for scissor \n")
+	print("Enter your choice \n 1 for Rock \n 2 for Paper \n 3 for Scissors \n")
  
  	# take the input from the user for making a selection
 	player_choice = int(input("player turn: "))
@@ -218,7 +218,7 @@ while True:
 	elif player_choice == 2:
 		player_select = 'paper'
 	else:
-		player_select = 'scissor'
+		player_select = 'scissors'
 
   # print user choice
 	print("The user has selected:" + player_select)
@@ -234,7 +234,7 @@ while True:
 	elif computer_choice == 2:
 		computer_select = 'paper'
 	else:
-		computer_select= 'scissor'
+		computer_select= 'scissors'
 		
 	print("Computer has selected: " + computer_select)
 
