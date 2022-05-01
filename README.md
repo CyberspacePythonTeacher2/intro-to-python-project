@@ -207,7 +207,7 @@ while True:
 	print("Enter your choice \n 1 for Rock \n 2 for Paper \n 3 for Scissors \n")
  
  	# take the input from the user for making a selection
-	player_choice = int(input("player turn: "))
+	player_choice = int(input("Player's turn: "))
  
  #looping until user enter invalid input
 	while player_choice > 3 or player_choice < 1:
@@ -222,7 +222,7 @@ while True:
 
   # print user choice
 	print("The user has selected: " + player_select.capitalize())
-	print("\n Computer turn.......")
+	print("\nComputer's turn.......")
  
  #We make a specific interval that the computer choose a random  number between (1,3)
 	computer_choice = random.randint(1, 3)
